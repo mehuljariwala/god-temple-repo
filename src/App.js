@@ -72,6 +72,7 @@ function App() {
 
   const onRedirect = (viedo) => {
     if (viedo.iframe) {
+      window.scrollTo(0, 0);
       setOnLink(viedo);
     } else {
       window.location.href = viedo.link;
